@@ -14,82 +14,77 @@
 
   <style type="text/css">
 
-    #wave{
-      position: relative;
-      background:linear-gradient(to bottom right, teal, red), url(cloud.jpg);
-      background-blend-mode: screen;
-
-      height: 20em;
-    }
-    .custom-shape-divider-bottom-1615947956 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50%;
-      overflow: hidden;
-      line-height: 0;
-      transform: rotate(180deg);
-
-    }
-
-
-    .custom-shape-divider-bottom-1615947956 svg {
-      position: relative;0
-      display: block;
-      width: calc(116% + 1.3px);
-      height: 138px;
-
-    }
-
-    .custom-shape-divider-bottom-1615947956 .shape-fill {
-      fill: #FFFFFF;
-
-    }
-
-    /** For mobile devices **/
-    @media (max-width: 767px) {
-      .custom-shape-divider-bottom-1615947956 svg {
-        width: calc(116% + 1.3px);
-        height: 87px;
-      }
-    }
-
-    #prof{
-      transform: scale(-1, -1);
-    }
-
-    #row1{
-      text-align: center;
-      margin: 3em;
-    }
-
-    #footer
-    {
-      display: inline-flex;
-      background:linear-gradient(to bottom right, teal, red);
-       
-      color: white;
-      width: 102%;
-      text-align: center;
-      padding: 2em 2em 1em 3em;
-    }
-
-    .footerList{
-      list-style: none;
-    }
+   #head1{
+     display: inline-flex;
+     background:linear-gradient(to bottom right, firebrick, teal);
+     color: white;
+     width: 102%;
+     height: auto;
+     text-align: center;
+     padding: 2em 2em 1em 3em;
 
 
 
+   }
+    #nav1{
 
 
-  </style>
+}
+
+   #row1{
+    text-align: center;
+    margin: 3em;
+  }
+
+  
+ 
+  #prj{
+    border: solid 3px darkslategray ;
+    border-radius: 10px;
+    padding: 0.5em;
+    color: darkslategray;
+
+  }
+
+  #footer{
+    display: inline-flex;
+    background:linear-gradient(to bottom right, teal, firebrick);
+    color: white;
+    width: 102%;
+    text-align: center;
+    padding: 2em 2em 1em 3em;
+  }
+
+  .footerList{
+    list-style: none;
+  }
+
+  .bgColor{
+    background: none;
+    padding: 0.5em;
+    margin-bottom: 0.7em;
+    color: white;
+
+
+  }
+
+
+</style>
 
 </head>
 <body>
-  <!-- nav bar -->
+  
+  
 
-  <ul class="nav justify-content-end">
+
+
+  <!-- header -->
+
+  <div id="head1" class="row">
+    <!-- nav bar -->
+  <nav class="bgColor">
+<div id="nav1">
+  <ul class="nav justify-content-end" >
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Home</a>
     </li>
@@ -98,49 +93,31 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-link" href="#"  >Contact</a>
+      <a class="nav-link" href="#">Contact</a>
     </li>
   </ul>
-
-  <!-- wave (shapedivider -->
-  <div id="wave" class="custom-shape-divider-bottom-1615947956">
-
-
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-
-
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-
-      <div class="row">
-        <div class=" container col-6">
-
-          <h1 id="prof" style="text-align:center">Profile</h1>
-
-
-        </div>
-
-        <div class="container col-6">
-          <h1>Hello, world!</h1>
-
-        </div>
-      </div>
-
-    </svg>
   </div>
+  </nav>
+    <div class="container col-12">
+      <h1>Hi! I'm Ali</h1>
+      <h3><em>a web developer</em></h3>
+    </div>
+    
+
+  </div>
+  
+
 
 
 
   <div id="row1" class="row">
-
-
     <div class=" container col-4">
 
-
     </div>
-
+    <h1 id="prj">Below are some of my projects.</h1>
     <div class="container col-4">
-      <h1>Portfolio</h1>
-      <button class="btn btn-primary">Click Here!</button>
+
+
     </div>
     <div class="container col-4">
 
@@ -156,18 +133,18 @@
   <div id="footer" class=" row">
 
    <div class="container mb-5">
-    <h3>Competency</h3>
+    <h3>Competencies</h3>
   </div>
 
   <div class="col-4">
     <ul class="footerList">
       <li><h4>Language</h4></li><br>
       <li><i class="fab fa-html5 fa-2x"></i></li>
-      <h5>HTML5</h5><br>
+      <h6><em>HTML5</em></h6><br>
       <li><i class="fab fa-css3-alt fa-2x"></i> </li>
-      <h5>CSS3</h5><br>
+      <h6><em>CSS3</em></h6><br>
       <li> <i class="fab fa-js-square fa-2x"></i></li>
-      <h5>JavaScript</h5><br>
+      <h6><em>JavaScript</em></h6><br>
 
     </ul>
 
@@ -177,12 +154,12 @@
   <div class="col-4">
     <h4>Library</h4><br>  
     <i class="fab fa-bootstrap fa-2x"> </i>
-    <h5>Bootstrap</h5><br>
+    <h6><em>Bootstrap</em></h6><br>
   </div>
   <div class="col-4">
     <h4>Framework</h4><br>  
     <i class="fab fa-vuejs fa-2x"></i>
-    <h5>VueJS</h5><br>
+    <h6><em>VueJS</em></h6><br>
   </div>
 
 </div>
